@@ -1,39 +1,37 @@
-# <h1 align="center"> Forge Template </h1>
+# 🔐 Wallet Practice - Solidity + Foundry
 
-**Template repository for getting started quickly with Foundry projects**
+A simple Ethereum wallet smart contract built using [Solidity](https://docs.soliditylang.org/) and [Foundry](https://book.getfoundry.sh/). This project is for learning and practicing how to create, test, and deploy secure smart contracts.
 
-![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
+---
 
-## Getting Started
+## ✨ Features
 
-Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
+- Deposit and withdraw Ether
+- Owner-only access control
+- Written in Solidity ^0.8.x
+- Tested using Foundry
 
-Or, if your repo already exists, run:
-```sh
-forge init
-forge build
-forge test
-```
+---
 
-## Writing your first test
+## 🧱 Tech Stack
 
-All you need is to `import forge-std/Test.sol` and then inherit it from your test contract. Forge-std's Test contract comes with a pre-instatiated [cheatcodes environment](https://book.getfoundry.sh/cheatcodes/), the `vm`. It also has support for [ds-test](https://book.getfoundry.sh/reference/ds-test.html)-style logs and assertions. Finally, it supports Hardhat's [console.log](https://github.com/brockelmore/forge-std/blob/master/src/console.sol). The logging functionalities require `-vvvv`.
+- **Language:** Solidity
+- **Framework:** Foundry
+- **Testing:** Forge
+- **Logging:** console.sol (Foundry standard library)
 
-```solidity
-pragma solidity 0.8.10;
+---
 
-import "forge-std/Test.sol";
+## 🚀 Getting Started
 
-contract ContractTest is Test {
-    function testExample() public {
-        vm.roll(100);
-        console.log(1);
-        emit log("hi");
-        assertTrue(true);
-    }
-}
-```
+### 1. Install Foundry (if not already)
 
-## Development
-
-This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to install and use Foundry.
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+2. Clone the Repo
+bash
+Copy
+Edit
+git clone https://github.com/your-username/wallet-practice-solidity.git
+cd wallet-practice-solidity
